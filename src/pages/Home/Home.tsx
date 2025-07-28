@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../../components/layout/Header';
 import Hero from '../../components/sections/Hero';
+import Footer from '../../components/layout/Footer';
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -9,8 +10,8 @@ const Home: React.FC = () => {
             <Header />
             <main className="home-main">
                 <Hero />
-                {/* Qui aggiungerai le altre sezioni */}
             </main>
+            <Footer />
         </div>
     );
 };
