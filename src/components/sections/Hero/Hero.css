@@ -6,7 +6,6 @@
     align-items: center;
     justify-content: center;
     background-color: var(--color-black);
-    padding-top: 4rem;
     width: 100vw;
     position: relative;
 }
@@ -24,7 +23,23 @@
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    /* FORZATURA CENTRATURA */
+    /* SPAZIO PER IL BANNER SOPRA */
+}
+
+.hero-banner {
+    margin-bottom: 2rem;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    display: flex;
+    justify-content: center;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
 }
 
 .hero-title {
@@ -127,7 +142,6 @@
 
     .hero-logo {
         height: 5rem;
-        /* Logo più grande su tablet */
     }
 
     .hero-subtitle {
@@ -157,9 +171,9 @@
         padding: 4rem 2rem;
     }
 
+
     .hero-logo {
         height: 6rem;
-        /* Logo ancora più grande su desktop */
     }
 
     .hero-subtitle {
@@ -174,9 +188,9 @@
 
 /* Large Desktop */
 @media (min-width: 1280px) {
+
     .hero-logo {
-        height: 20rem;
-        /* Logo massimo su schermi grandi */
+        height: 7rem;
     }
 
     .hero-subtitle {
