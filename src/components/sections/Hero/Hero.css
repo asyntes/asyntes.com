@@ -1,33 +1,32 @@
-/* src/components/sections/Hero/Hero.css */
-
 .hero {
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--color-black);
     width: 100vw;
     position: relative;
+    padding: 4rem 0 0 0;
+    /* Padding top per l'header fisso, bottom ridotto */
 }
 
 .hero-container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 1rem;
+    /* Ridotto da 2rem */
     text-align: center;
-    /* FORZATURA CENTRATURA */
 }
 
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    /* SPAZIO PER IL BANNER SOPRA */
 }
 
 .hero-banner {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    /* Ridotto da 2rem */
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
@@ -43,7 +42,8 @@
 }
 
 .hero-title {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    /* Ridotto da 2rem */
     width: 100%;
     text-align: center;
     display: flex;
@@ -54,10 +54,8 @@
 
 .hero-logo {
     height: 4rem;
-    /* Logo grande nell'hero */
     width: auto;
     filter: brightness(0) invert(1);
-    /* Rende il logo bianco se è nero */
 }
 
 .hero-subtitle {
@@ -75,11 +73,11 @@
     font-size: 1rem;
     color: var(--color-white);
     opacity: 0.9;
-    margin: 2.5rem auto;
+    margin: 1.5rem auto;
+    /* Ridotto da 2.5rem */
     line-height: 1.6;
     max-width: 600px;
     text-align: center;
-    /* FORZATURA CENTRATURA */
     width: 100%;
 }
 
@@ -132,12 +130,19 @@
 /* Tablet */
 @media (min-width: 768px) {
     .hero {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding: 5rem 0 0 0;
     }
 
     .hero-container {
-        padding: 3rem 2rem;
+        padding: 2rem;
+    }
+
+    .hero-banner {
+        margin-bottom: 2rem;
+    }
+
+    .hero-title {
+        margin-bottom: 2rem;
     }
 
     .hero-logo {
@@ -150,7 +155,7 @@
 
     .hero-description {
         font-size: 1.125rem;
-        margin: 3rem auto;
+        margin: 2rem auto;
     }
 
     .hero-actions {
@@ -167,10 +172,9 @@
 
 /* Desktop */
 @media (min-width: 1024px) {
-    .hero-container {
-        padding: 4rem 2rem;
+    .hero {
+        padding: 6rem 0 0 0;
     }
-
 
     .hero-logo {
         height: 6rem;
@@ -182,13 +186,12 @@
 
     .hero-description {
         font-size: 1.25rem;
-        margin: 4rem auto;
+        margin: 3rem auto;
     }
 }
 
 /* Large Desktop */
 @media (min-width: 1280px) {
-
     .hero-logo {
         height: 7rem;
     }

@@ -17,12 +17,6 @@ const Hero = () => {
                     <p className="hero-description">
                         Software Developer con competenze diversificate in web development, intelligenza artificiale, realtà immersive e UX design. Ogni progetto beneficia dell'approccio tecnologico più adatto per creare soluzioni digitali efficaci e su misura.
                     </p>
-
-                    <div className="hero-actions">
-                        <button className="btn btn-secondary">
-                            Contatti
-                        </button>
-                    </div>
                 </div>
             </div>
         </section>
