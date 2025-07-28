@@ -1,3 +1,5 @@
+/* src/components/layout/Header/Header.css */
+
 .header {
     position: fixed;
     top: 0;
@@ -17,10 +19,11 @@
 
 .nav-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 4rem;
     width: 100%;
+    justify-content: flex-start;
+    /* FORZA ALLINEAMENTO A SINISTRA */
 }
 
 /* Logo */
@@ -41,7 +44,7 @@
 .nav-desktop {
     display: none;
     margin-left: 3rem;
-    /* Spazio dal logo */
+    /* Spazio dal logo, poi tutto a sinistra */
 }
 
 .nav-links {
@@ -61,13 +64,16 @@
 }
 
 .nav-link:hover {
-    background-color: var(--color-gray-dark);
+    background-color: var(--color-white);
+    color: var(--color-black);
+    /* Inverte i colori al hover */
 }
 
 /* Mobile Navigation */
 .nav-mobile-button {
     display: block;
-    flex-shrink: 0;
+    margin-left: auto;
+    /* Spinge il pulsante hamburger a destra */
 }
 
 .mobile-menu-btn {
@@ -83,7 +89,8 @@
 }
 
 .mobile-menu-btn:hover {
-    opacity: 0.8;
+    background-color: var(--color-white);
+    color: var(--color-black);
 }
 
 .menu-icon {
@@ -92,7 +99,7 @@
 }
 
 .nav-mobile {
-    background-color: var(--color-gray-dark);
+    background-color: var(--color-black);
     border-top: 1px solid var(--color-gray-dark);
 }
 
@@ -112,11 +119,11 @@
     border-radius: 4px;
     transition: var(--transition);
     text-align: left;
-    /* Allineato a sinistra anche su mobile */
 }
 
 .nav-mobile-link:hover {
-    background-color: var(--color-black);
+    background-color: var(--color-white);
+    color: var(--color-black);
 }
 
 /* Responsive Design */
@@ -127,10 +134,12 @@
 
     .nav-desktop {
         display: block;
+        /* Mostra il menu desktop */
     }
 
     .nav-mobile-button {
         display: none;
+        /* Nasconde il pulsante hamburger */
     }
 
     .logo-text {
