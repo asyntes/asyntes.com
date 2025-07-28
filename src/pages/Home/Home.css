@@ -1,0 +1,14 @@
+.home {
+    min-height: 100vh;
+    background-color: var(--color-black);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.home-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* FORZA CENTRATURA */
+}
