@@ -1,12 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import './Header.css';
 
-interface HeaderProps {
-    className?: string;
-}
-
-const Header: React.FC<HeaderProps> = ({ className = '' }) => {
+const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const navItems = [
@@ -22,13 +18,17 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
     };
 
     return (
-        <header className={`header ${className}`}>
+        <header className="header">
             <nav className="nav">
                 <div className="nav-container">
                     <div className="nav-content">
-                        {/* Logo */}
+                        {/* Logo SVG */}
                         <div className="logo">
-                            <span className="logo-text">Asyntes</span>
+                            <img
+                                src="/asyntes.svg"
+                                alt="Asyntes"
+                                className="logo-svg"
+                            />
                         </div>
 
                         {/* Desktop Navigation */}

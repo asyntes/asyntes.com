@@ -31,16 +31,16 @@
     align-items: center;
     flex-shrink: 0;
     padding-left: 0;
-    /* ZERO PADDING = BORDO ASSOLUTO */
     margin-left: 1rem;
-    /* MARGIN INVECE DI PADDING */
 }
 
-.logo-text {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--color-white);
-    text-decoration: none;
+.logo-svg {
+    height: 2rem;
+    /* Altezza del logo */
+    width: auto;
+    /* Mantiene proporzioni */
+    filter: brightness(0) invert(1);
+    /* Rende il logo bianco se è nero */
 }
 
 /* Desktop Navigation - ALLINEATO A SINISTRA */
@@ -137,7 +137,11 @@
 
     .logo {
         margin-left: 2rem;
-        /* MARGIN SUL LOGO ANCHE SU DESKTOP */
+    }
+
+    .logo-svg {
+        height: 2.5rem;
+        /* Logo più grande su desktop */
     }
 
     .nav-desktop {
@@ -146,10 +150,6 @@
 
     .nav-mobile-button {
         display: none;
-    }
-
-    .logo-text {
-        font-size: 1.75rem;
     }
 }
 

@@ -1,3 +1,5 @@
+/* src/components/sections/Hero/Hero.css */
+
 .hero {
     min-height: 100vh;
     display: flex;
@@ -29,19 +31,18 @@
     margin-bottom: 2rem;
     width: 100%;
     text-align: center;
-    /* FORZATURA CENTRATURA */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
-.hero-brand {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: var(--color-white);
-    margin-bottom: 0.5rem;
-    line-height: 1.1;
-    text-align: center;
-    /* FORZATURA CENTRATURA */
-    width: 100%;
-    display: block;
+.hero-logo {
+    height: 4rem;
+    /* Logo grande nell'hero */
+    width: auto;
+    filter: brightness(0) invert(1);
+    /* Rende il logo bianco se è nero */
 }
 
 .hero-subtitle {
@@ -51,7 +52,6 @@
     opacity: 0.8;
     line-height: 1.3;
     text-align: center;
-    /* FORZATURA CENTRATURA */
     width: 100%;
     display: block;
 }
@@ -125,9 +125,9 @@
         padding: 3rem 2rem;
     }
 
-    .hero-brand {
-        font-size: 3.5rem;
-        margin-bottom: 1rem;
+    .hero-logo {
+        height: 5rem;
+        /* Logo più grande su tablet */
     }
 
     .hero-subtitle {
@@ -157,8 +157,9 @@
         padding: 4rem 2rem;
     }
 
-    .hero-brand {
-        font-size: 4.5rem;
+    .hero-logo {
+        height: 6rem;
+        /* Logo ancora più grande su desktop */
     }
 
     .hero-subtitle {
@@ -173,8 +174,9 @@
 
 /* Large Desktop */
 @media (min-width: 1280px) {
-    .hero-brand {
-        font-size: 5rem;
+    .hero-logo {
+        height: 20rem;
+        /* Logo massimo su schermi grandi */
     }
 
     .hero-subtitle {
