@@ -7,7 +7,7 @@ const About = () => {
             <div className="about-container">
                 <div className="about-content">
                     <div className="about-skills">
-                        <h2 className="skills-title">Competenze</h2>
+                        <h2 className="about-title">Competenze</h2>
                         <div className="skills-grid">
                             <div className="skill-item">
                                 <Code className="skill-icon" />
