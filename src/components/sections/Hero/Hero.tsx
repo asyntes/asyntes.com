@@ -19,11 +19,8 @@ const Hero = () => {
                     </p>
 
                     <div className="hero-actions">
-                        <button className="btn btn-primary">
-                            Inizia un Progetto
-                        </button>
                         <button className="btn btn-secondary">
-                            Scopri di Più
+                            Contattami
                         </button>
                     </div>
                 </div>
