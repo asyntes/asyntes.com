@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2500 2500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #1d1d1b;
+      }
+    </style>
+  </defs>
+  <g id="Livello_2" data-name="Livello 2">
+    <rect class="cls-2" width="2500" height="2500"/>
+  </g>
+  <g id="Livello_1" data-name="Livello 1">
+    <path id="triangle" class="cls-1" d="m2180.13,2055.52H319.87L1250,444.48l930.13,1611.03Zm-1451.68-235.89h1043.1l-521.55-903.35-521.55,903.35Z"/>
+  </g>
+</svg>
