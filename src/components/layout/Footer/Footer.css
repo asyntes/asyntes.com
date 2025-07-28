@@ -13,10 +13,17 @@
 }
 
 .footer-brand {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 1rem;
+}
+
+.footer-logo {
+    height: 2.5rem;
+    width: auto;
+    filter: brightness(0) invert(1);
+    /* Rende il logo bianco */
 }
 
 .footer-text {
@@ -32,8 +39,8 @@
         padding: 0 2rem;
     }
 
-    .footer-brand {
-        font-size: 1.75rem;
+    .footer-logo {
+        height: 3rem;
     }
 
     .footer-text {
@@ -46,7 +53,7 @@
         padding: 3rem 0;
     }
 
-    .footer-brand {
-        font-size: 2rem;
+    .footer-logo {
+        height: 3.5rem;
     }
 }
