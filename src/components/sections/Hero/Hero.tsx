@@ -20,7 +20,7 @@ const Hero = () => {
 
                     <div className="hero-actions">
                         <button className="btn btn-secondary">
-                            Contattami
+                            Contatti
                         </button>
                     </div>
                 </div>
