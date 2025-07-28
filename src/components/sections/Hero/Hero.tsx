@@ -14,14 +14,8 @@ const Hero = () => {
                             className="banner-image"
                         />
                     </div>
-
-                    <div className="hero-title">
-                        <span className="hero-subtitle">Building Software Solutions</span>
-                    </div>
-
                     <p className="hero-description">
-                        Trasformiamo le tue idee in soluzioni software innovative.
-                        Sviluppiamo applicazioni moderne, scalabili e performanti per il tuo business.
+                        Software Developer con competenze diversificate in web development, intelligenza artificiale, realtà immersive e UX design. Ogni progetto beneficia dell'approccio tecnologico più adatto per creare soluzioni digitali efficaci e su misura.
                     </p>
 
                     <div className="hero-actions">
