@@ -1,4 +1,5 @@
 import { Mail, Linkedin } from 'lucide-react';
+import XIcon from '../../../components/icons/XIcon';
 import { useI18n } from '../../../contexts/I18nContext';
 import './Contact.css';
 
@@ -17,7 +18,7 @@ const Contact = () => {
                         className="contact-item"
                         aria-label="Profilo X"
                     >
-                        <img src="/x-logo.svg" alt="X" className="contact-icon" />
+                        <XIcon className="contact-icon" /> {/* Sostituisci img con XIcon */}
                         <div className="contact-info">
                             <span className="contact-label">X</span>
                             <span className="contact-value">{t('contact.x.follow')}</span>
