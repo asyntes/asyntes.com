@@ -5,27 +5,9 @@ const About = () => {
     return (
         <section id="about" className="about">
             <div className="about-container">
-                <h2 className="about-title">Chi Sono</h2>
                 <div className="about-content">
-                    <div className="about-text">
-                        <p className="about-description">
-                            Software Developer con competenze diversificate in web development,
-                            intelligenza artificiale, realtà immersive e UX design.
-                        </p>
-                        <p className="about-description">
-                            Ogni progetto beneficia dell'approccio tecnologico più adatto per
-                            creare soluzioni digitali efficace e su misura. Combino creatività
-                            e tecnica per trasformare idee in esperienze digitali memorabili.
-                        </p>
-                        <p className="about-description">
-                            La mia passione per l'innovazione mi porta a esplorare costantemente
-                            nuove tecnologie e metodologie, garantendo sempre risultati
-                            all'avanguardia e funzionali.
-                        </p>
-                    </div>
-
                     <div className="about-skills">
-                        <h3 className="skills-title">Competenze Principali</h3>
+                        <h2 className="about-title">Competenze</h2>
                         <div className="skills-grid">
                             <div className="skill-item">
                                 <Code className="skill-icon" />
