@@ -1,6 +1,9 @@
+import { useI18n } from '../../../contexts/I18nContext';
 import './Footer.css';
 
 const Footer = () => {
+    const { t } = useI18n();
+
     return (
         <footer className="footer">
             <div className="footer-container">
@@ -12,7 +15,7 @@ const Footer = () => {
                     />
                 </div>
                 <p className="footer-text">
-                    © {new Date().getFullYear()} Asyntes. Tutti i diritti riservati.
+                    © {new Date().getFullYear()} Asyntes. {t('footer.rights')}
                 </p>
             </div>
         </footer>

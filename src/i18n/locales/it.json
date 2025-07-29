@@ -1,0 +1,47 @@
+{
+    "nav": {
+        "home": "Home",
+        "skills": "Competenze",
+        "contact": "Contatti"
+    },
+    "hero": {
+        "description1": "Software Developer con competenze diversificate in intelligenza artificiale, web development, realtà immersive e UX design.",
+        "description2": "Ogni soluzione digitale che sviluppo combina analisi strategica approfondita e adozione di tecnologie all'avanguardia."
+    },
+    "about": {
+        "title": "Competenze"
+    },
+    "skills": {
+        "ai": {
+            "title": "Intelligenza Artificiale",
+            "description": "Machine Learning, integrazione AI, Chatbot, Manutenzione Predittiva"
+        },
+        "web": {
+            "title": "Web Development",
+            "description": "React, TypeScript, Spring Boot, Java, Docker, MongoDB, SQL, ecc."
+        },
+        "xr": {
+            "title": "Realtà Immersive",
+            "description": "Virtual Reality, Augmented Reality, Unity 3D, Three.js"
+        },
+        "ux": {
+            "title": "UX Design",
+            "description": "Design thinking, prototipazione, user experience"
+        }
+    },
+    "contact": {
+        "title": "Contatti",
+        "x": {
+            "follow": "Seguimi"
+        },
+        "linkedin": {
+            "connect": "Connettiti"
+        },
+        "email": {
+            "send": "santesepr@gmail.com"
+        }
+    },
+    "footer": {
+        "rights": "Tutti i diritti riservati."
+    }
+}

@@ -1,11 +1,14 @@
 import { Mail, Linkedin } from 'lucide-react';
+import { useI18n } from '../../../contexts/I18nContext';
 import './Contact.css';
 
 const Contact = () => {
+    const { t } = useI18n();
+
     return (
         <section id="contact" className="contact">
             <div className="contact-container">
-                <h2 className="contact-title">Contatti</h2>
+                <h2 className="contact-title">{t('contact.title')}</h2>
                 <div className="contact-methods">
                     <a
                         href="https://x.com/asyntes"
@@ -17,7 +20,7 @@ const Contact = () => {
                         <img src="/x-logo.svg" alt="X" className="contact-icon" />
                         <div className="contact-info">
                             <span className="contact-label">X</span>
-                            <span className="contact-value">Seguimi</span>
+                            <span className="contact-value">{t('contact.x.follow')}</span>
                         </div>
                     </a>
 
@@ -31,7 +34,7 @@ const Contact = () => {
                         <Linkedin className="contact-icon" />
                         <div className="contact-info">
                             <span className="contact-label">LinkedIn</span>
-                            <span className="contact-value">Connettiti</span>
+                            <span className="contact-value">{t('contact.linkedin.connect')}</span>
                         </div>
                     </a>
 
@@ -43,7 +46,7 @@ const Contact = () => {
                         <Mail className="contact-icon" />
                         <div className="contact-info">
                             <span className="contact-label">Email</span>
-                            <span className="contact-value">santesepr@gmail.com</span>
+                            <span className="contact-value">{t('contact.email.send')}</span>
                         </div>
                     </a>
                 </div>
