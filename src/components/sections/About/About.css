@@ -1,7 +1,6 @@
 .about {
     background-color: var(--color-black);
     color: var(--color-white);
-    padding: 2rem 0;
     /* Ridotto da 4rem */
     width: 100%;
 }
@@ -107,10 +106,6 @@
 
 /* Tablet */
 @media (min-width: 768px) {
-    .about {
-        padding: 2rem 0;
-        /* Mantenuto uguale al mobile */
-    }
 
     .about-container {
         padding: 0 2rem;
@@ -158,10 +153,6 @@
 
 /* Desktop */
 @media (min-width: 1024px) {
-    .about {
-        padding: 3rem 0;
-        /* Ridotto da 6rem per allinearsi con Contact */
-    }
 
     .about-title {
         font-size: 3.5rem;
