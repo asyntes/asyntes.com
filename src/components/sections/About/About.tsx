@@ -9,15 +9,15 @@ const About = () => {
                     <div className="about-skills">
                         <h2 className="about-title">Competenze</h2>
                         <div className="skills-grid">
-                            <div className="skill-item skill-web">
-                                <Code className="skill-icon" />
-                                <h4>Web Development</h4>
-                                <p>React, TypeScript, Spring Boot, Java, Docker, MongoDB, SQL, ecc.</p>
-                            </div>
                             <div className="skill-item skill-ai">
                                 <Brain className="skill-icon" />
                                 <h4>Intelligenza Artificiale</h4>
                                 <p>Machine Learning, AI integration, Chatbot, Preditctive Maintenance</p>
+                            </div>
+                            <div className="skill-item skill-web">
+                                <Code className="skill-icon" />
+                                <h4>Web Development</h4>
+                                <p>React, TypeScript, Spring Boot, Java, Docker, MongoDB, SQL, ecc.</p>
                             </div>
                             <div className="skill-item skill-xr">
                                 <Glasses className="skill-icon" />
