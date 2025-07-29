@@ -104,6 +104,24 @@
     color: var(--color-white);
 }
 
+
+
+.skill-web {
+    background-color: rgba(255, 153, 0, 0.23);
+}
+
+.skill-ai {
+    background-color: rgba(96, 96, 235, 0.23);
+}
+
+.skill-xr {
+    background-color: rgba(200, 0, 255, 0.23);
+}
+
+.skill-ux {
+    background-color: rgba(0, 255, 187, 0.23);
+}
+
 /* Tablet */
 @media (min-width: 768px) {
 
