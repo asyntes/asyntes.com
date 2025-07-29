@@ -20,7 +20,6 @@ const Header = () => {
             <nav className="nav">
                 <div className="nav-container">
                     <div className="nav-content">
-                        {/* Logo SVG */}
                         <div className="logo">
                             <img
                                 src="/asyntes.svg"
@@ -29,7 +28,6 @@ const Header = () => {
                             />
                         </div>
 
-                        {/* Desktop Navigation */}
                         <div className="nav-desktop">
                             <div className="nav-links">
                                 {navItems.map((item) => (
@@ -44,7 +42,6 @@ const Header = () => {
                             </div>
                         </div>
 
-                        {/* Mobile menu button */}
                         <div className="nav-mobile-button">
                             <button
                                 onClick={toggleMobileMenu}
@@ -61,7 +58,6 @@ const Header = () => {
                     </div>
                 </div>
 
-                {/* Mobile Navigation */}
                 {isMobileMenuOpen && (
                     <div className="nav-mobile">
                         <div className="nav-mobile-links">

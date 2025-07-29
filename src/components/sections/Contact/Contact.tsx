@@ -1,4 +1,4 @@
-import { Mail, Twitter, Linkedin } from 'lucide-react';
+import { Mail, Linkedin } from 'lucide-react';
 import './Contact.css';
 
 const Contact = () => {
@@ -8,14 +8,16 @@ const Contact = () => {
                 <h2 className="contact-title">Contatti</h2>
                 <div className="contact-methods">
                     <a
-                        href="mailto:santespr@gmail.com"
+                        href="https://x.com/asyntes"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="contact-item"
-                        aria-label="Invia email"
+                        aria-label="Profilo X"
                     >
-                        <Mail className="contact-icon" />
+                        <img src="/x-logo.svg" alt="X" className="contact-icon" />
                         <div className="contact-info">
-                            <span className="contact-label">Email</span>
-                            <span className="contact-value">santesepr@gmail.com</span>
+                            <span className="contact-label">X</span>
+                            <span className="contact-value">Seguimi</span>
                         </div>
                     </a>
 
@@ -34,16 +36,14 @@ const Contact = () => {
                     </a>
 
                     <a
-                        href="https://x.com/asyntes"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href="mailto:santespr@gmail.com"
                         className="contact-item"
-                        aria-label="Profilo X (Twitter)"
+                        aria-label="Invia email"
                     >
-                        <Twitter className="contact-icon" />
+                        <Mail className="contact-icon" />
                         <div className="contact-info">
-                            <span className="contact-label">X (Twitter)</span>
-                            <span className="contact-value">Seguimi</span>
+                            <span className="contact-label">Email</span>
+                            <span className="contact-value">santesepr@gmail.com</span>
                         </div>
                     </a>
                 </div>

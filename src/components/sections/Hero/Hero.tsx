@@ -1,4 +1,3 @@
-// src/components/sections/Hero/Hero.tsx
 import './Hero.css';
 
 const Hero = () => {
@@ -6,7 +5,6 @@ const Hero = () => {
         <section id="home" className="hero">
             <div className="hero-container">
                 <div className="hero-content">
-                    {/* Banner PNG */}
                     <div className="hero-banner">
                         <img
                             src="/banner.png"
