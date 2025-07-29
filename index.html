@@ -1,11 +1,69 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/triangle.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Asyntes</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/asyntes.svg" />
+  <link rel="apple-touch-icon" href="/asyntes.svg" />
+
+  <!-- Meta tag base -->
+  <title>Asyntes - Software Developer | AI, Web, XR, UX Design</title>
+  <meta name="description"
+    content="Software Developer con competenze diversificate in intelligenza artificiale, web development, realtà immersive e UX design. Ogni progetto beneficia dell'approccio tecnologico più adatto per creare soluzioni digitali efficaci e su misura.">
+  <meta name="keywords"
+    content="software developer, intelligenza artificiale, web development, realtà virtuale, ux design, react, typescript, machine learning">
+  <meta name="author" content="Asyntes">
+
+  <!-- Open Graph Meta Tags (Facebook, LinkedIn, WhatsApp, etc.) -->
+  <meta property="og:title" content="Asyntes - Software Developer | AI, Web, XR, UX Design">
+  <meta property="og:description"
+    content="Software Developer con competenze diversificate in intelligenza artificiale, web development, realtà immersive e UX design. Ogni progetto beneficia dell'approccio tecnologico più adatto per creare soluzioni digitali efficaci e su misura.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tuodominio.com">
+  <meta property="og:image" content="https://tuodominio.com/banner.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Asyntes">
+  <meta property="og:locale" content="it_IT">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@asyntes">
+  <meta name="twitter:creator" content="@asyntes">
+  <meta name="twitter:title" content="Asyntes - Software Developer | AI, Web, XR, UX Design">
+  <meta name="twitter:description"
+    content="Software Developer con competenze diversificate in intelligenza artificiale, web development, realtà immersive e UX design.">
+  <meta name="twitter:image" content="https://tuodominio.com/banner.png">
+
+  <!-- Fix CSS per logo mobile -->
+  <style>
+    .logo-svg {
+      height: 2rem;
+      width: auto;
+      filter: brightness(0) invert(1) contrast(100%);
+      display: block !important;
+      opacity: 1;
+    }
+
+    @media (max-width: 767px) {
+      .logo-svg {
+        filter: brightness(0) invert(1) contrast(100%) saturate(100%);
+        -webkit-filter: brightness(0) invert(1) contrast(100%);
+        min-height: 2rem;
+        min-width: 2rem;
+      }
+
+      .logo {
+        padding-left: 0;
+        margin-left: 1rem;
+        display: flex !important;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -13,4 +71,4 @@
   <script type="module" src="/src/main.tsx"></script>
 </body>
 
-</html>
+</html
