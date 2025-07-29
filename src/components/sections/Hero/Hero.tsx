@@ -18,16 +18,8 @@ const Hero = () => {
                     </p>
                     <p className="hero-description">
                         Ogni progetto beneficia dell'approccio tecnologico più adatto per
-                        creare soluzioni digitali efficace e su misura. Combino creatività
-                        e tecnica per trasformare idee in esperienze digitali memorabili.
+                        creare soluzioni digitali efficaci e su misura.
                     </p>
-                    <p className="hero-description">
-                        La mia passione per l'innovazione mi porta a esplorare costantemente
-                        nuove tecnologie e metodologie, garantendo sempre risultati
-                        all'avanguardia e funzionali.
-                    </p>
-
-
                 </div>
             </div>
         </section>
