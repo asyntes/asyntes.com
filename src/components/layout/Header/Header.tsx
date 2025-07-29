@@ -1,14 +1,16 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { useI18n } from '../../../contexts/I18nContext';
 import './Header.css';
 
 const Header = () => {
+    const { t } = useI18n();
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const navItems = [
-        { name: 'Home', href: '#home' },
-        { name: 'Competenze', href: '#about' },
-        { name: 'Contatti', href: '#contact' }
+        { name: t('nav.home'), href: '#home' },
+        { name: t('nav.skills'), href: '#about' },
+        { name: t('nav.contact'), href: '#contact' }
     ];
 
     const toggleMobileMenu = () => {

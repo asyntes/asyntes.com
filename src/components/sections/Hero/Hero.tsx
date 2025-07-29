@@ -1,6 +1,9 @@
+import { useI18n } from '../../../contexts/I18nContext';
 import './Hero.css';
 
 const Hero = () => {
+    const { t } = useI18n();
+
     return (
         <section id="home" className="hero">
             <div className="hero-container">
@@ -13,12 +16,10 @@ const Hero = () => {
                         />
                     </div>
                     <p className="hero-description">
-                        Software Developer con competenze diversificate in intelligenza artificiale,
-                        web development, realtà immersive e UX design.
+                        {t('hero.description1')}
                     </p>
                     <p className="hero-description">
-                        Ogni soluzione digitale che sviluppo combina analisi strategica approfondita
-                        e adozione di tecnologie all'avanguardia.
+                        {t('hero.description2')}
                     </p>
                 </div>
             </div>
