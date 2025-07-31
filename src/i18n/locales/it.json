@@ -13,20 +13,20 @@
     },
     "skills": {
         "ai": {
-            "title": "Intelligenza Artificiale",
-            "description": "Machine Learning, integrazione AI, Chatbot, Manutenzione Predittiva"
+            "title": "Artificial Intelligence",
+            "description": "Machine Learning, integrazione AI, Chatbot, Predictive Maintenance"
         },
         "web": {
             "title": "Web Development",
             "description": "React, TypeScript, Spring Boot, Java, Docker, MongoDB, SQL, ecc."
         },
         "xr": {
-            "title": "Realtà Immersive",
-            "description": "Virtual Reality, Augmented Reality, Unity 3D, Three.js"
+            "title": "Extended Reality",
+            "description": "Virtual Reality, Augmented Reality, Mixed Reality, Unity 3D, Three.js"
         },
         "ux": {
             "title": "UX Design",
-            "description": "Design thinking, prototipazione, user experience"
+            "description": "Design thinking, prototyping, user experience"
         }
     },
     "contact": {

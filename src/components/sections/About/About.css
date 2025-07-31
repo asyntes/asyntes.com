@@ -105,13 +105,12 @@
 }
 
 
-
-.skill-web {
-    background-color: rgba(255, 196, 0, 0.23);
-}
-
 .skill-ai {
     background-color: rgba(96, 161, 235, 0.23);
+}
+
+.skill-web {
+    background-color: rgba(255, 162, 0, 0.23);
 }
 
 .skill-xr {
