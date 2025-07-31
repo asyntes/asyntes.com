@@ -71,3 +71,24 @@ button {
 .text-right {
     text-align: right;
 }
+
+#about,
+#contact {
+    scroll-margin-top: 5rem;
+}
+
+@media (min-width: 768px) {
+
+    #about,
+    #contact {
+        scroll-margin-top: 5.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    #about,
+    #contact {
+        scroll-margin-top: 6rem;
+    }
+}
