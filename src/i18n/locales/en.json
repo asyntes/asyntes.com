@@ -21,8 +21,8 @@
             "description": "React, TypeScript, Spring Boot, Java, Docker, MongoDB, SQL, etc."
         },
         "xr": {
-            "title": "Immersive Reality",
-            "description": "Virtual Reality, Augmented Reality, Unity 3D, Three.js"
+            "title": "Extended Reality",
+            "description": "Virtual Reality, Augmented Reality, Mixed Reality, Unity 3D, Three.js"
         },
         "ux": {
             "title": "UX Design",
