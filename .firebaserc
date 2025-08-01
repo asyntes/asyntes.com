@@ -1,17 +1,5 @@
 {
   "projects": {
     "default": "antonio-santese-website"
-  },
-  "targets": {
-    "antonio-santese-website": {
-      "hosting": {
-        "main-site": [
-          "asyntes.com"
-        ],
-        "redirect-site": [
-          "antoniosantese.com"
-        ]
-      }
-    }
   }
 }
