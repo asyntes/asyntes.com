@@ -18,7 +18,7 @@
         },
         "web": {
             "title": "Web Development",
-            "description": "React, TypeScript, Spring Boot, Java, Docker, MongoDB, SQL, etc."
+            "description": "TypeScript, React, Angular, Java, Spring Boot, Docker, SQL, MongoDB, ecc."
         },
         "xr": {
             "title": "Extended Reality",
