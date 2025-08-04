@@ -40,7 +40,7 @@ const Contact = () => {
                     </a>
 
                     <a
-                        href="mailto:santespr@gmail.com"
+                        href="mailto:info@asyntes.com"
                         className="contact-item"
                         aria-label="Invia email"
                     >
