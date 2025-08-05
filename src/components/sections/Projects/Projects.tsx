@@ -6,11 +6,11 @@ const Projects = () => {
     const { t } = useI18n();
 
     return (
-        <section id="projects" className="about">
-            <div className="about-container">
-                <div className="about-content">
-                    <div className="about-skills">
-                        <h2 className="about-title">{t('projects.title')}</h2>
+        <section id="projects" className="projects">
+            <div className="projects-container">
+                <div className="projects-content">
+                    <div className="projects-skills">
+                        <h2 className="projects-title">{t('projects.title')}</h2>
                         <div className="skills-grid">
                             <div className="skill-item skill-ai">
                                 <Brain className="skill-icon" />
