@@ -87,6 +87,7 @@ button {
     text-align: right;
 }
 
+#projects,
 #about,
 #contact {
     scroll-margin-top: 5rem;

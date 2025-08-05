@@ -1,12 +1,16 @@
 {
     "nav": {
         "home": "Home",
+        "projects": "Progetti",
         "skills": "Competenze",
         "contact": "Contatti"
     },
     "hero": {
         "description1": "Software Engineer con oltre 5 anni di esperienza professionale e competenze diversificate in intelligenza artificiale, web development, realtà immersive e UX design.",
         "description2": "Ogni soluzione digitale che sviluppo combina analisi strategica approfondita e adozione di tecnologie all'avanguardia."
+    },
+    "projects": {
+        "title": "Progetti"
     },
     "about": {
         "title": "Competenze"
