@@ -1,4 +1,4 @@
-import { Mail, Linkedin } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import XIcon from '../../../components/icons/XIcon';
 import { useI18n } from '../../../contexts/I18nContext';
 import './Contact.css';
@@ -22,20 +22,6 @@ const Contact = () => {
                         <div className="contact-info">
                             <span className="contact-label">X</span>
                             <span className="contact-value">{t('contact.x.follow')}</span>
-                        </div>
-                    </a>
-
-                    <a
-                        href="https://linkedin.com/in/asyntes"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="contact-item"
-                        aria-label="Profilo LinkedIn"
-                    >
-                        <Linkedin className="contact-icon" />
-                        <div className="contact-info">
-                            <span className="contact-label">LinkedIn</span>
-                            <span className="contact-value">{t('contact.linkedin.connect')}</span>
                         </div>
                     </a>
 

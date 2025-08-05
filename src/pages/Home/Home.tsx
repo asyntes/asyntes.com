@@ -4,7 +4,6 @@ import Hero from '../../components/sections/Hero';
 import About from '../../components/sections/About';
 import Contact from '../../components/sections/Contact';
 import Footer from '../../components/layout/Footer';
-import Projects from '../../components/sections/Projects';
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -13,7 +12,6 @@ const Home: React.FC = () => {
             <Header />
             <main className="home-main">
                 <Hero />
-                <Projects />
                 <About />
                 <Contact />
             </main>
