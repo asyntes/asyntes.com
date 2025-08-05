@@ -6,11 +6,20 @@
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     user-select: none;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 html {
     scroll-behavior: smooth;
     touch-action: manipulation;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    font-size: 16px;
 }
 
 body {
@@ -20,6 +29,13 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     touch-action: manipulation;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    min-width: 320px;
+    width: 100%;
+    position: relative;
 }
 
 :root {
@@ -89,5 +105,17 @@ button {
     #about,
     #contact {
         scroll-margin-top: 6rem;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    html {
+        -webkit-text-size-adjust: 100%;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    html {
+        -webkit-text-size-adjust: 100%;
     }
 }
