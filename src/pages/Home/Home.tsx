@@ -13,8 +13,8 @@ const Home: React.FC = () => {
             <Header />
             <main className="home-main">
                 <Hero />
-                <Projects />
                 <About />
+                <Projects />
                 <Contact />
             </main>
             <Footer />

@@ -1,7 +1,7 @@
 .projects {
     background-color: var(--color-black);
     color: var(--color-white);
-    padding: 1.5rem 0 3rem 0;
+    padding: 1.5rem 0 0 0;
     width: 100%;
 }
 
@@ -145,7 +145,7 @@
 /* Tablet */
 @media (min-width: 768px) {
     .projects {
-        padding: 2rem 0 4rem 0;
+        padding: 2rem 0 0 0;
     }
 
     .projects-container {
@@ -158,9 +158,11 @@
     }
 
     .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         gap: 2.5rem;
         justify-items: center;
+        max-width: 450px;
+        margin: 0 auto;
     }
 
     .project-card {
@@ -185,7 +187,7 @@
 /* Desktop */
 @media (min-width: 1024px) {
     .projects {
-        padding: 2.5rem 0 5rem 0;
+        padding: 2.5rem 0 0 0;
     }
 
     .projects-title {

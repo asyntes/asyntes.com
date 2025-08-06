@@ -62,7 +62,7 @@ const Projects = () => {
                                     </div>
 
                                     <div className="project-link">
-                                        <span>Visita il progetto</span>
+                                        <span>{t('projects.visitProject')}</span>
                                         <ExternalLink className="external-link-icon" />
                                     </div>
                                 </div>
