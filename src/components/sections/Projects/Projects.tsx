@@ -1,23 +1,19 @@
-import { ExternalLink, Satellite } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import { useI18n } from '../../../contexts/I18nContext';
 import './Projects.css';
 
 const Projects = () => {
     const { t } = useI18n();
 
-    // Array dei progetti (per ora solo StarMonitor, ma facilmente espandibile)
     const projects = [
         {
             id: 'starmonitor',
             title: t('projects.starmonitor.title'),
             description: t('projects.starmonitor.description'),
-            tech: t('projects.starmonitor.tech'), // Array dalle traduzioni
+            tech: t('projects.starmonitor.tech'),
             link: t('projects.starmonitor.link'),
-            image: '/starmonitor-preview.png', // Placeholder - sostituisci con l'immagine reale
-            className: 'project-starmonitor',
-            icon: Satellite
+            image: '/starmonitor.png',
         }
-        // Qui puoi aggiungere altri progetti in futuro
     ];
 
     return (
@@ -26,7 +22,6 @@ const Projects = () => {
                 <h2 className="projects-title">{t('projects.title')}</h2>
                 <div className="projects-grid">
                     {projects.map((project) => {
-                        const IconComponent = project.icon;
 
                         return (
                             <a
@@ -34,20 +29,14 @@ const Projects = () => {
                                 href={project.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className={`project-card ${project.className}`}
+                                className="project-card"
                             >
                                 <div className="project-image">
-                                    {/* Per ora usiamo un placeholder con icona */}
-                                    <div className="project-image-placeholder">
-                                        <IconComponent size={48} />
-                                    </div>
-                                    {/* Quando avrai l'immagine, sostituisci con:
-                                    <img 
-                                        src={project.image} 
+                                    <img
+                                        src={project.image}
                                         alt={project.title}
                                         loading="lazy"
                                     />
-                                    */}
                                 </div>
 
                                 <div className="project-content">
@@ -63,7 +52,7 @@ const Projects = () => {
                                     </div>
 
                                     <div className="project-link">
-                                        <span>Visita il progetto</span>
+                                        <span>{t('projects.visitProject')}</span>
                                         <ExternalLink className="external-link-icon" />
                                     </div>
                                 </div>
