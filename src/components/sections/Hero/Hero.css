@@ -6,7 +6,7 @@
     width: 100vw;
     position: relative;
     padding: 4rem 0 0 0;
-    /* Padding top per l'header fisso, bottom ridotto */
+    /* Ridotto bottom padding da 0 a 1rem per mobile */
 }
 
 .hero-container {
@@ -73,12 +73,17 @@
     font-size: 1rem;
     color: var(--color-white);
     opacity: 0.9;
-    margin: 1.5rem auto;
-    /* Ridotto da 2.5rem */
+    margin: 1.5rem auto 0.5rem auto;
+    /* Ridotto margin-bottom da 1.5rem a 0.5rem */
     line-height: 1.6;
     max-width: 600px;
     text-align: center;
     width: 100%;
+}
+
+.hero-description:last-child {
+    margin-bottom: 0;
+    /* Assicura che l'ultimo paragrafo non abbia margin-bottom */
 }
 
 .hero-actions {
@@ -130,7 +135,8 @@
 /* Tablet */
 @media (min-width: 768px) {
     .hero {
-        padding: 5rem 0 0 0;
+        padding: 5rem 0 1.5rem 0;
+        /* Ridotto bottom padding */
     }
 
     .hero-container {
@@ -155,7 +161,8 @@
 
     .hero-description {
         font-size: 1.125rem;
-        margin: 2rem auto;
+        margin: 2rem auto 1rem auto;
+        /* Ridotto margin-bottom */
     }
 
     .hero-actions {
@@ -173,7 +180,8 @@
 /* Desktop */
 @media (min-width: 1024px) {
     .hero {
-        padding: 6rem 0 0 0;
+        padding: 6rem 0 2rem 0;
+        /* Ridotto bottom padding */
     }
 
     .hero-logo {
@@ -186,7 +194,8 @@
 
     .hero-description {
         font-size: 1.25rem;
-        margin: 3rem auto;
+        margin: 3rem auto 1.5rem auto;
+        /* Ridotto margin-bottom */
     }
 }
 

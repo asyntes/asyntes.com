@@ -10,7 +10,18 @@
         "description2": "Ogni soluzione digitale che sviluppo combina analisi strategica approfondita e adozione di tecnologie all'avanguardia."
     },
     "projects": {
-        "title": "Progetti"
+        "title": "Progetti",
+        "starmonitor": {
+            "title": "StarMonitor",
+            "description": "Visualizzazione 3D dei satelliti Starlink in orbita attorno alla Terra utilizzando React, Three.js e dati satellitari live di CelesTrak.",
+            "tech": [
+                "React",
+                "Three.js",
+                "TypeScript",
+                "CelesTrak API"
+            ],
+            "link": "https://starmonitor.vercel.app"
+        }
     },
     "about": {
         "title": "Competenze"
@@ -37,9 +48,6 @@
         "title": "Contatti",
         "x": {
             "follow": "Seguimi"
-        },
-        "linkedin": {
-            "connect": "Connettiti"
         },
         "email": {
             "send": "info@asyntes.com"
