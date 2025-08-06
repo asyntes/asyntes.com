@@ -11,7 +11,6 @@ const Header = () => {
         { name: t('nav.home'), href: '#home' },
         { name: t('nav.skills'), href: '#about' },
         { name: t('nav.projects'), href: '#projects' },
-        { name: t('nav.contact'), href: '#contact' }
     ];
 
     const toggleMobileMenu = () => {
