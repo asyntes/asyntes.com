@@ -14,7 +14,6 @@ const Projects = () => {
             tech: t('projects.starmonitor.tech'), // Array dalle traduzioni
             link: t('projects.starmonitor.link'),
             image: '/starmonitor-preview.png', // Placeholder - sostituisci con l'immagine reale
-            className: 'project-starmonitor',
             icon: Satellite
         }
         // Qui puoi aggiungere altri progetti in futuro
@@ -34,7 +33,7 @@ const Projects = () => {
                                 href={project.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className={`project-card ${project.className}`}
+                                className="project-card"
                             >
                                 <div className="project-image">
                                     {/* Per ora usiamo un placeholder con icona */}
