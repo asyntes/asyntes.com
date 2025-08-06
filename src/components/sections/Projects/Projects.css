@@ -1,7 +1,7 @@
 .projects {
     background-color: var(--color-black);
     color: var(--color-white);
-    padding: 3rem 0;
+    padding: 1.5rem 0 3rem 0;
     width: 100%;
 }
 
@@ -24,6 +24,7 @@
     grid-template-columns: 1fr;
     gap: 2rem;
     width: 100%;
+    justify-items: center;
 }
 
 .project-card {
@@ -151,7 +152,7 @@
 /* Tablet */
 @media (min-width: 768px) {
     .projects {
-        padding: 4rem 0;
+        padding: 2rem 0 4rem 0;
     }
 
     .projects-container {
@@ -166,10 +167,13 @@
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 2.5rem;
+        justify-items: center;
     }
 
     .project-card {
         padding: 2.5rem;
+        max-width: 400px;
+        width: 100%;
     }
 
     .project-image {
@@ -188,7 +192,7 @@
 /* Desktop */
 @media (min-width: 1024px) {
     .projects {
-        padding: 5rem 0;
+        padding: 2.5rem 0 5rem 0;
     }
 
     .projects-title {
@@ -196,12 +200,17 @@
     }
 
     .projects-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr;
         gap: 2rem;
+        justify-items: center;
+        max-width: 500px;
+        margin: 0 auto;
     }
 
     .project-card {
         padding: 2rem;
+        width: 100%;
+        max-width: 450px;
     }
 
     .project-image {
@@ -213,9 +222,11 @@
 @media (min-width: 1280px) {
     .projects-grid {
         gap: 2.5rem;
+        max-width: 550px;
     }
 
     .project-card {
         padding: 2.5rem;
+        max-width: 500px;
     }
 }
