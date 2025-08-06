@@ -7,8 +7,8 @@ const Header = () => {
     const { t } = useI18n();
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+    // Rimosso 'nav.home' dall'array navItems
     const navItems = [
-        { name: t('nav.home'), href: '#home' },
         { name: t('nav.skills'), href: '#about' },
         { name: t('nav.projects'), href: '#projects' },
     ];
@@ -22,13 +22,13 @@ const Header = () => {
             <nav className="nav">
                 <div className="nav-container">
                     <div className="nav-content">
-                        <div className="logo">
+                        <a href="#home" className="logo">
                             <img
                                 src="/asyntes.svg"
                                 alt="Asyntes"
                                 className="logo-svg"
                             />
-                        </div>
+                        </a>
 
                         <div className="nav-desktop">
                             <div className="nav-links">
