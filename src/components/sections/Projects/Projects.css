@@ -1,6 +1,7 @@
 .projects {
     background-color: var(--color-black);
     color: var(--color-white);
+    padding: 3rem 0;
     width: 100%;
 }
 
@@ -14,111 +15,144 @@
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     color: var(--color-white);
 }
 
-.projects-content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.projects-text {
-    text-align: center;
-}
-
-.projects-description {
-    font-size: 1.125rem;
-    line-height: 1.8;
-    margin-bottom: 1.5rem;
-    color: var(--color-white);
-    opacity: 0.9;
-}
-
-.projects-description:last-child {
-    margin-bottom: 0;
-}
-
-.projects-skills {
-    width: 100%;
-}
-
-.skills-title {
-    font-size: 1.75rem;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 2rem;
-    color: var(--color-white);
-}
-
-.skills-grid {
+.projects-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
     width: 100%;
 }
 
-.skill-item {
+.project-card {
     background-color: var(--color-black);
     color: var(--color-white);
     padding: 2rem;
-    border-radius: 8px;
+    border-radius: 12px;
     border: 2px solid var(--color-white);
-    text-align: center;
     transition: var(--transition);
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
+    text-decoration: none;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project-image-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
+    text-align: left;
 }
 
-.skill-item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.15);
-}
-
-.skill-icon {
-    width: 3rem;
-    height: 3rem;
+.project-title {
+    font-size: 1.5rem;
+    font-weight: 600;
     color: var(--color-white);
     margin-bottom: 0.5rem;
 }
 
-.skill-item h4 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-    color: var(--color-white);
-}
-
-.skill-item p {
-    font-size: 0.95rem;
+.project-description {
+    font-size: 1rem;
     line-height: 1.6;
-    opacity: 0.9;
     color: var(--color-white);
+    opacity: 0.9;
+    margin-bottom: 1rem;
 }
 
-
-.skill-ai {
-    background-color: rgba(96, 161, 235, 0.23);
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
 }
 
-.skill-web {
-    background-color: rgba(255, 162, 0, 0.23);
+.tech-tag {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-white);
+    padding: 0.4rem 0.8rem;
+    border-radius: 16px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.skill-xr {
-    background-color: rgba(200, 0, 255, 0.23);
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 0.95rem;
+    opacity: 0.8;
+    transition: var(--transition);
+    margin-top: auto;
 }
 
-.skill-ux {
-    background-color: rgba(0, 255, 187, 0.23);
+.project-card:hover .project-link {
+    opacity: 1;
 }
 
+.external-link-icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Varianti colore per diversi tipi di progetto */
+.project-starmonitor {
+    background: linear-gradient(135deg,
+            rgba(0, 100, 255, 0.15) 0%,
+            rgba(0, 255, 200, 0.15) 100%);
+    border-color: rgba(0, 200, 255, 0.6);
+}
+
+.project-starmonitor:hover {
+    border-color: rgba(0, 200, 255, 0.9);
+    box-shadow: 0 12px 35px rgba(0, 200, 255, 0.25);
+}
+
+/* Tablet */
 @media (min-width: 768px) {
+    .projects {
+        padding: 4rem 0;
+    }
 
     .projects-container {
         padding: 0 2rem;
@@ -126,72 +160,62 @@
 
     .projects-title {
         font-size: 3rem;
-        margin-bottom: 2rem;
-        /* Ridotto da 4rem */
+        margin-bottom: 4rem;
     }
 
-    .projects-content {
-        gap: 2.5rem;
-        /* Ridotto da 5rem */
-    }
-
-    .projects-description {
-        font-size: 1.25rem;
-        margin-bottom: 2rem;
-    }
-
-    .skills-title {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-        /* Ridotto da 3rem */
-    }
-
-    .skills-grid {
+    .projects-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 2.5rem;
     }
 
-    .skill-item {
+    .project-card {
         padding: 2.5rem;
     }
 
-    .skill-item h4 {
-        font-size: 1.375rem;
+    .project-image {
+        height: 220px;
     }
 
-    .skill-item p {
-        font-size: 1rem;
+    .project-title {
+        font-size: 1.75rem;
+    }
+
+    .project-description {
+        font-size: 1.05rem;
     }
 }
 
 /* Desktop */
 @media (min-width: 1024px) {
+    .projects {
+        padding: 5rem 0;
+    }
 
     .projects-title {
         font-size: 3.5rem;
     }
 
-    .projects-description {
-        font-size: 1.375rem;
-    }
-
-    .skills-grid {
-        grid-template-columns: repeat(4, 1fr);
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
 
-    .skill-item {
-        padding: 2rem 1.5rem;
+    .project-card {
+        padding: 2rem;
+    }
+
+    .project-image {
+        height: 200px;
     }
 }
 
 /* Large Desktop */
 @media (min-width: 1280px) {
-    .skills-grid {
+    .projects-grid {
         gap: 2.5rem;
     }
 
-    .skill-item {
-        padding: 2.5rem 2rem;
+    .project-card {
+        padding: 2.5rem;
     }
 }
